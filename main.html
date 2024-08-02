@@ -3,10 +3,56 @@
 <html>
 
 <head>
+	 <style>
+        body {
+            width: 1100px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .imageContainer img {
+            max-width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+              .first-column, .last-column {
+            width: 200px;
+        }
+        .middle-column {
+            width: 600px;
+            padding: 10px;
+        }
+    </style>
+		 
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<div class="imageContainer">
+        <img src="your-image.jpg" alt="Architectural Image">
+    </div>
+    <table>
+        <tr>
+            <td class="first-column"><img src="image1.jpg" alt="Image 1"></td>
+            <td class="middle-column">Text Content for Row 1</td>
+            <td class="last-column"><img src="image2.jpg" alt="Image 2"></td>
+        </tr>
+        <tr>
+            <td class="first-column"><img src="image3.jpg" alt="Image 3"></td>
+            <td class="middle-column">Text Content for Row 2</td>
+            <td class="last-column"><img src="image4.jpg" alt="Image 4"></td>
+        </tr>
+    </table>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
